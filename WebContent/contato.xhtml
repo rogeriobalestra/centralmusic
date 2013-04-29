@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+	<title>Smith</title>
+
+<style type="text/css">
+	.fundoPrincipal {
+		background: black;
+	}
+</style>
+
+
+</h:head>
+
+
+<h:body styleClass="fundoPrincipal">
+
+
+	<h:form id="form_get" prependId="false">
+	
+		<br/>
+	
+		<div id="principal" align="center">
+
+			<ui:include src="./cabecalho_menu.xhtml" />
+			
+			<br/>
+			
+			<div style="text-align: center; width: 1000px; font-family: arial; color: #D1D1D1; " >
+				<h:panelGrid columns="3" style="width: 1000px;">
+					<p:graphicImage  value="./img/contato.jpg" style="border: 1px solid #9c8700;"/>
+					
+					<h:panelGrid columns="2">	
+						<h:outputText value="Nome: "/>
+						<h:inputText style="width: 160px;"/>
+						<h:outputText value="Email: "/>
+						<h:inputText style="width: 160px;"/>
+						<h:outputText value="Info: "/>
+						<h:inputTextarea style="width: 160px;" />
+					</h:panelGrid>
+
+					<h:panelGrid columns="1">
+						<h:outputText value="Tel:(11) 2651.7959" style="font-family: arial; font-size: 18px; color: #D1D1D1;"/>
+					</h:panelGrid>
+
+				</h:panelGrid>
+			
+
+
+			</div>
+
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</h:form>
+</h:body>
+</html>
